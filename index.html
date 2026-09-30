@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEN 3140 – Les 2 | Wie mag wat?</title>
+<style>
+:root{--bg:#071521;--panel:#102c42;--panel2:#173b55;--text:#f5f8fb;--muted:#bfd0dc;--yellow:#ffd43b;--green:#5bd38c;--red:#ff7a7a;--line:#31536b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(#06131f,#0a1d2c);color:var(--text);line-height:1.55}
+.hero{min-height:78vh;display:grid;place-items:center;padding:42px 20px;background:radial-gradient(circle at 82% 20%,rgba(255,212,59,.19),transparent 28%),linear-gradient(135deg,#06131f,#10334b)}
+.wrap,main{width:min(1060px,92vw);margin:auto}.kicker{color:var(--yellow);font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.94;letter-spacing:-.055em;margin:.18em 0 .25em}h1 span{color:var(--yellow)}h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em;margin:.2em 0 .55em}
+.lead{font-size:1.2rem;max-width:760px;color:#d4e0e8}.chips{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.chip,.level{background:#19364a;border:1px solid #45657a;border-radius:999px;padding:7px 11px}.level{font-size:.78rem;font-weight:900}
+.btn,button{border:0;border-radius:10px;background:var(--yellow);color:#171717;font-weight:900;padding:12px 17px;cursor:pointer;font-size:1rem}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,21,33,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navrow{width:min(1060px,92vw);margin:auto;display:flex;gap:14px;align-items:center;padding:10px 0}.bar{height:7px;flex:1;background:#1c3a4e;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--yellow)}
+section{padding:58px 0;border-bottom:1px solid #28485d}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px}.card,.quiz,.callout{background:linear-gradient(145deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:17px;padding:20px}
+.role{position:relative;overflow:hidden}.role b{font-size:2.2rem;color:var(--yellow)}.role h3{margin:.25em 0}.role .core{border-top:1px solid #456079;padding-top:12px;color:#d7e2ea}
+.warning{border-left:5px solid var(--yellow)}.big{font-size:clamp(1.35rem,3vw,2rem);font-weight:900}.choice{display:block;padding:12px;border:1px solid #47657a;border-radius:10px;margin:9px 0;cursor:pointer}.choice:hover{background:#1c415a}
+.feedback{display:none;margin-top:12px;padding:13px;border-radius:10px}.good{display:block!important;background:rgba(91,211,140,.1);border:1px solid var(--green)}.bad{display:block!important;background:rgba(255,122,122,.1);border:1px solid var(--red)}
+textarea,input[type=text],select{width:100%;background:#081a29;color:white;border:1px solid #49667a;border-radius:9px;padding:10px;font:inherit;margin-top:6px}textarea{min-height:90px}
+.match{display:grid;grid-template-columns:1fr 170px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #36536a}
+table{width:100%;border-collapse:collapse;background:#0d2638;border-radius:14px;overflow:hidden}th,td{padding:11px;border-bottom:1px solid #2d4c61;text-align:left;vertical-align:top}th{color:var(--yellow);background:#17374e}td input{min-width:120px}
+.score{font-size:2.3rem;font-weight:950;color:var(--yellow)}footer{text-align:center;color:var(--muted);padding:45px 15px}
+@media(max-width:700px){.match{grid-template-columns:1fr}.hero{min-height:70vh}table{display:block;overflow-x:auto}}
+@media print{nav,button,.btn{display:none}body{background:white;color:black}.card,.quiz,.callout{background:white;color:black;border:1px solid #aaa}}
+</style></head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="kicker">NEN 3140 · Lesbrief 2 · mbo niveau 2 en 3</div>
+<h1>Wie mag <span>wat?</span></h1>
+<p class="lead">VOP, VP, WV en IV: leer het verschil tussen een taak uitvoeren, veilig werk organiseren en verantwoordelijkheid dragen voor de installatie.</p>
+<div class="chips"><span class="chip">⏱ 120 minuten</span><span class="chip">👷 Rollen & aanwijzingen</span><span class="chip">🛡 Verantwoordelijkheden</span><span class="chip">🎓 Niveau 2 & 3</span></div>
+<a href="#start" class="btn">Start de les</a>
+</div></header>
+<nav><div class="navrow"><strong>Les 2</strong><div class="bar"><i id="bar"></i></div><span id="pct">0%</span></div></nav>
+<main>
+<section id="start"><div class="kicker">01 · Belangrijk uitgangspunt</div><h2>Een diploma is niet hetzelfde als een aanwijzing</h2>
+<div class="callout warning big">Een mbo-niveau of diploma maakt iemand <span style="color:var(--yellow)">niet automatisch</span> VOP, VP, WV of IV.</div>
+<p>De werkgever of organisatie moet bevoegdheden, taken en verantwoordelijkheden passend organiseren en vastleggen.</p>
+<h3>Na deze les kun je:</h3><div class="grid">
+<div class="card">De rollen <strong>VOP, VP, WV en IV</strong> herkennen en uitleggen.</div><div class="card">Uitleggen waarom <strong>opleiding alleen</strong> niet bepaalt wat iemand mag uitvoeren.</div><div class="card">Bij praktijksituaties bepalen wie uitvoert, wie verantwoordelijk is en wanneer je moet stoppen.</div><div class="card">Het verschil herkennen tussen <strong>uitvoeren</strong> en <strong>verantwoordelijkheid dragen</strong>.</div>
+</div></section>
+
+<section><div class="kicker">02 · Startcasus</div><h2>“Ik ben elektricien, dus ik mag dit.”</h2>
+<div class="callout">Sam werkt als monteur. Bij een machine moet een storing worden onderzocht. Sam zegt: <strong>“Ik heb een elektrotechnisch diploma en werk hier al twee jaar. Dus ik mag de kast openen, meten en zelf bepalen hoe ik de storing oplos.”</strong></div>
+<div class="quiz" style="margin-top:16px"><label class="choice"><input type="radio" name="sam" value="a"> Sam heeft automatisch gelijk.</label><label class="choice"><input type="radio" name="sam" value="b"> Sam heeft automatisch ongelijk.</label><label class="choice"><input type="radio" name="sam" value="c"> Er is meer informatie nodig.</label><button onclick="checkRadio('sam','c','samfb','Juist. Diploma en ervaring zijn relevant, maar bepalen niet zelfstandig de bevoegdheid voor deze concrete taak.','Niet helemaal. Je hebt meer informatie nodig over onder andere aanwijzing, taak, instructies, bekwaamheid en omstandigheden.')">Controleer</button><div id="samfb" class="feedback"></div></div>
+<p><strong>Welke informatie heb je nodig?</strong></p><textarea placeholder="Bijvoorbeeld: taak, aanwijzing, instructies, risico's, omstandigheden..."></textarea>
+<p><strong>Wat is het verschil tussen vakkennis hebben en bevoegd zijn?</strong></p><textarea></textarea>
+</section>
+
+<section><div class="kicker">03 · De vier rollen</div><h2>VOP · VP · WV · IV</h2><div class="grid">
+<div class="card role"><b>VOP</b><h3>Voldoende Onderricht Persoon</h3><p>Voldoende geïnstrueerd om specifiek aangewezen elektrische werkzaamheden veilig uit te voeren binnen afgesproken grenzen.</p><div class="core"><strong>Kern:</strong> werkt volgens instructies en kent de grenzen van de eigen taak.</div></div>
+<div class="card role"><b>VP</b><h3>Vakbekwaam Persoon</h3><p>Heeft relevante vakkennis en ervaring en kan elektrische gevaren bij het eigen werk herkennen en passende maatregelen toepassen.</p><div class="core"><strong>Kern:</strong> kan binnen de aanwijzing zelfstandiger werkzaamheden uitvoeren en risico’s beoordelen.</div></div>
+<div class="card role"><b>WV</b><h3>Werkverantwoordelijke</h3><p>Verantwoordelijk voor de veilige uitvoering en organisatie van werkzaamheden.</p><div class="core"><strong>Kern:</strong> zorgt dat werk veilig wordt voorbereid en uitgevoerd en dat taken en instructies duidelijk zijn.</div></div>
+<div class="card role"><b>IV</b><h3>Installatieverantwoordelijke</h3><p>Draagt verantwoordelijkheid voor de veilige bedrijfsvoering van de elektrische installatie.</p><div class="core"><strong>Kern:</strong> bewaakt veilige toestand, bedrijfsvoering en afspraken rond de installatie.</div></div>
+</div>
+<div class="callout warning" style="margin-top:18px"><strong>Let op:</strong> dit zijn leeromschrijvingen. Concrete werkzaamheden volgen uit aanwijzing, instructies, bekwaamheid, risico’s en bedrijfsafspraken.</div></section>
+
+<section><div class="kicker">04 · Koppel de rol</div><h2>Welke rol past het best?</h2><div class="quiz" id="matchbox">
+<div class="match"><span>1. Verantwoordelijk voor veilige bedrijfsvoering van de installatie.</span><select data-a="IV"><option value="">Kies…</option><option>VOP</option><option>VP</option><option>WV</option><option>IV</option></select></div>
+<div class="match"><span>2. Geïnstrueerd voor bepaalde, afgebakende werkzaamheden.</span><select data-a="VOP"><option value="">Kies…</option><option>VOP</option><option>VP</option><option>WV</option><option>IV</option></select></div>
+<div class="match"><span>3. Organiseert en bewaakt veilige uitvoering van werkzaamheden.</span><select data-a="WV"><option value="">Kies…</option><option>VOP</option><option>VP</option><option>WV</option><option>IV</option></select></div>
+<div class="match"><span>4. Heeft vakkennis en ervaring om elektrische gevaren bij eigen werk te beoordelen.</span><select data-a="VP"><option value="">Kies…</option><option>VOP</option><option>VP</option><option>WV</option><option>IV</option></select></div>
+<div class="match"><span>5. Zorgt vooraf dat duidelijk is hoe werkzaamheden veilig worden uitgevoerd.</span><select data-a="WV"><option value="">Kies…</option><option>VOP</option><option>VP</option><option>WV</option><option>IV</option></select></div>
+<div class="match"><span>6. Kent grenzen van eigen instructie en stopt bij twijfel.</span><select data-a="VOP"><option value="">Kies…</option><option>VOP</option><option>VP</option><option>WV</option><option>IV</option></select></div>
+<br><button onclick="matchRoles()">Controleer alle zes</button><div id="matchfb" class="feedback"></div></div></section>
+
+<section><div class="kicker">05 · Niveau 2</div><h2>Wie doet wat?</h2><p>In alle situaties verandert of ontbreekt belangrijke informatie. Kies de veiligste reactie.</p>
+<div id="situations"></div></section>
+
+<section><div class="kicker">06 · Niveau 3</div><h2>Verantwoordelijkheid analyseren</h2><p>Kijk niet alleen naar wat iemand doet, maar ook naar voorbereiding, risico’s en verantwoordelijkheid.</p>
+<table><thead><tr><th>Situatie</th><th>Uitvoerder</th><th>Wie organiseert veilig werk?</th><th>Wie gaat over bedrijfsvoering?</th><th>Welke info ontbreekt?</th></tr></thead><tbody>
+<tr><td>Onderhoud aan een machine</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+<tr><td>Storing onderzoeken</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+<tr><td>Afgebakende handeling na instructie</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+<tr><td>Werkzaamheden aan een verdeelinrichting</td><td><input></td><td><input></td><td><input></td><td><input></td></tr>
+</tbody></table>
+<p><strong>Verdiepingsvraag:</strong> Waarom kan één persoon in sommige organisaties meerdere rollen hebben, terwijl je de verantwoordelijkheden toch duidelijk moet onderscheiden?</p><textarea></textarea>
+</section>
+
+<section><div class="kicker">07 · Praktijkopdracht</div><h2>Werkvoorbereiding met rolkaarten</h2>
+<div class="callout warning">Fictieve opdracht: <strong>“In de Jan van de Rodestraat doet de openbare verlichting het niet. De oorzaak moet veilig worden onderzocht.”</strong><br>Er wordt in deze oefening niet aan een onder spanning staande installatie gewerkt.</div>
+<p>Verdeel VOP, VP, WV en IV in je groep. Bespreek wat bekend moet zijn, welke gevaren aanwezig kunnen zijn, wie het werk organiseert, wie de bedrijfsvoering bewaakt, wie kan uitvoeren en wanneer terugkoppeling nodig is.</p>
+<table><thead><tr><th>Onderdeel</th><th>Onze afspraak</th><th>Waarom?</th></tr></thead><tbody>
+<tr><td>Werkopdracht</td><td><input></td><td><input></td></tr><tr><td>Risico’s</td><td><input></td><td><input></td></tr><tr><td>Uitvoerder</td><td><input></td><td><input></td></tr><tr><td>Instructie</td><td><input></td><td><input></td></tr><tr><td>Veiligheidsmaatregelen</td><td><input></td><td><input></td></tr><tr><td>Stopmoment / terugkoppeling</td><td><input></td><td><input></td></tr>
+</tbody></table></section>
+
+<section><div class="kicker">08 · Casus</div><h2>Wie heeft gelijk?</h2><div class="grid"><div class="card"><strong>A</strong><p>“Ik heb een diploma, dus ik mag alle werkzaamheden uitvoeren.”</p></div><div class="card"><strong>B</strong><p>“Als iemand mij één keer heeft uitgelegd hoe het moet, ben ik altijd bevoegd.”</p></div><div class="card"><strong>C</strong><p>“Wat ik mag uitvoeren hangt af van mijn bekwaamheid, aanwijzing, instructies, de taak en de omstandigheden.”</p></div></div>
+<div class="quiz" style="margin-top:15px"><label class="choice"><input type="radio" name="gelijk" value="a"> A</label><label class="choice"><input type="radio" name="gelijk" value="b"> B</label><label class="choice"><input type="radio" name="gelijk" value="c"> C</label><button onclick="checkRadio('gelijk','c','gelijkfb','Juist. Wat iemand mag uitvoeren hangt af van meerdere factoren en niet alleen van diploma, ervaring of een eenmalige uitleg.','Kijk opnieuw naar aanwijzing, bekwaamheid, instructies, taak en omstandigheden.')">Controleer</button><div id="gelijkfb" class="feedback"></div></div></section>
+
+<section><div class="kicker">09 · Check jezelf</div><h2>Eindcheck</h2><div class="quiz">
+<h3>1. Waar staat VOP voor?</h3><label class="choice"><input type="radio" name="q1" value="a"> Vakbekwaam Onderhouds Persoon</label><label class="choice"><input type="radio" name="q1" value="b"> Voldoende Onderricht Persoon</label><label class="choice"><input type="radio" name="q1" value="c"> Veilig Opgeleid Persoon</label>
+<h3>2. Welke rol is gekoppeld aan veilige organisatie/uitvoering van werkzaamheden?</h3><label class="choice"><input type="radio" name="q2" value="wv"> WV</label><label class="choice"><input type="radio" name="q2" value="iv"> IV</label><label class="choice"><input type="radio" name="q2" value="vop"> VOP</label>
+<h3>3. Welke rol is gekoppeld aan veilige bedrijfsvoering van de installatie?</h3><label class="choice"><input type="radio" name="q3" value="vp"> VP</label><label class="choice"><input type="radio" name="q3" value="iv"> IV</label><label class="choice"><input type="radio" name="q3" value="vop"> VOP</label>
+<h3>4. Maakt een elektrotechnisch diploma iemand automatisch VP?</h3><label class="choice"><input type="radio" name="q4" value="ja"> Ja</label><label class="choice"><input type="radio" name="q4" value="nee"> Nee</label>
+<button onclick="score()">Bekijk score</button><div id="scorefb" class="feedback"></div></div>
+<p><strong>5.</strong> Leg in eigen woorden het verschil uit tussen VP en WV.</p><textarea></textarea><p><strong>6.</strong> Waarom moet een VOP de grenzen van de eigen taak kennen?</p><textarea></textarea><p><span class="level">Niveau 3</span> Noem drie soorten informatie die nodig kunnen zijn voordat je bepaalt wie een elektrische taak mag uitvoeren.</p><textarea></textarea>
+</section>
+
+<section><div class="kicker">10 · Exit-ticket</div><h2>Wat neem je mee?</h2><p>Het belangrijkste verschil tussen VOP en VP vind ik:</p><textarea></textarea><p>De WV is belangrijk omdat:</p><textarea></textarea><p>De IV is belangrijk omdat:</p><textarea></textarea><p>Een vraag die ik nog heb:</p><textarea></textarea></section>
+
+<section><div class="kicker">11 · Samenvatting</div><h2>Vier rollen, vier kapstokken</h2><div class="grid">
+<div class="card role"><b>VOP</b><p>Voldoende geïnstrueerd voor specifiek aangewezen werkzaamheden binnen duidelijke grenzen.</p></div><div class="card role"><b>VP</b><p>Vakbekwaam en in staat elektrische gevaren bij het eigen werk te beoordelen.</p></div><div class="card role"><b>WV</b><p>Verantwoordelijk voor veilige organisatie en uitvoering van werkzaamheden.</p></div><div class="card role"><b>IV</b><p>Verantwoordelijk voor veilige bedrijfsvoering van de elektrische installatie.</p></div></div>
+<div class="callout warning big" style="margin-top:20px">Onthoud: diploma, functietitel of aantal jaren ervaring bepaalt <span style="color:var(--yellow)">niet op zichzelf</span> welke elektrische werkzaamheden iemand mag uitvoeren.</div>
+<h3>Vooruitblik – Les 3</h3><p>Veilig spanningsloos werken: een werkplek veilig voorbereiden, waarom alleen “de schakelaar uitzetten” niet voldoende is en hoe je voorkomt dat een installatie onverwacht weer wordt ingeschakeld.</p>
+</section></main>
+<footer>NEN 3140 · Les 2 · Wie mag wat? · interactieve webles</footer>
+<script>
+function pick(n){const x=document.querySelector('input[name="'+n+'"]:checked');return x?x.value:null}
+function fb(id,ok,msg){const e=document.getElementById(id);e.className='feedback '+(ok?'good':'bad');e.textContent=msg}
+function checkRadio(n,a,id,y,no){let v=pick(n);if(!v)return fb(id,false,'Kies eerst een antwoord.');fb(id,v===a,v===a?y:no)}
+function matchRoles(){let els=[...document.querySelectorAll('#matchbox select')],s=0;els.forEach(x=>{if(x.value===x.dataset.a)s++});fb('matchfb',s===6,'Je hebt '+s+' van de 6 goed.'+(s===6?' Alle rollen zijn juist gekoppeld.':' Bekijk de vier rolkaarten nog eens.'))}
+const cases=[
+['Situatie A','Je hebt instructie gekregen voor een eenvoudige, afgebakende elektrische handeling. Tijdens het werk blijkt de situatie anders dan tijdens de instructie.'],
+['Situatie B',"Een collega vraagt je om 'even' een meting te doen, maar je weet niet of deze meting binnen jouw aanwijzing valt."],
+['Situatie C','Een beveiliging schakelt steeds opnieuw uit en iemand vraagt jou hem opnieuw in te schakelen.']
+];
+let box=document.getElementById('situations');cases.forEach((c,i)=>{box.insertAdjacentHTML('beforeend',`<div class="quiz" style="margin:14px 0"><h3>${c[0]}</h3><p>${c[1]}</p><label class="choice"><input type="radio" name="s${i}" value="a"> Doorgaan, want de opdracht is al begonnen.</label><label class="choice"><input type="radio" name="s${i}" value="b"> Stoppen en overleggen volgens de werkafspraken.</label><label class="choice"><input type="radio" name="s${i}" value="c"> Zelf een nieuwe werkwijze bedenken zonder overleg.</label><button onclick="checkRadio('s${i}','b','sf${i}','Juist. Stoppen en overleggen is hier de veilige keuze.','Niet juist. Wanneer de situatie afwijkt, bevoegdheid onduidelijk is of een beveiliging herhaaldelijk aanspreekt: stoppen en overleggen.')">Controleer</button><div id="sf${i}" class="feedback"></div><p>Waarom?</p><textarea></textarea></div>`);});
+function score(){let s=0;if(pick('q1')==='b')s++;if(pick('q2')==='wv')s++;if(pick('q3')==='iv')s++;if(pick('q4')==='nee')s++;let e=document.getElementById('scorefb');e.className='feedback '+(s>=3?'good':'bad');e.innerHTML='<span class="score">'+s+'/4</span><br>'+(s===4?'Alles goed. Je herkent de vier kernpunten.':'Bekijk de rolkaarten en probeer opnieuw.')}
+window.addEventListener('scroll',()=>{const d=document.documentElement,p=Math.round(100*d.scrollTop/(d.scrollHeight-d.clientHeight));document.getElementById('bar').style.width=p+'%';document.getElementById('pct').textContent=p+'%'})
+</script></body></html>
